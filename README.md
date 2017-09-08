@@ -9,21 +9,21 @@ Both assigned projects will be PHP projects.
 
 ### Part 1
 
-<Insert Assignment Description>
+Insert Assignment Description
 
 ### Part 2
 
-<Insert Assignment Description>
+Insert Assignment Description
 
 ### Part 3
 
-<Insert Assignment Description>
+Insert Assignment Description
 
 ### Part 4
 
-<Insert Assignment Description>
+Insert Assignment Description
 
 ## Group Project
 
-<Insert Description>
+Insert Assignment Description
 
