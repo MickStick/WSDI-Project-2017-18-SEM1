@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Arial';
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: rgba(50, 190, 100, 0.7);
+    color: rgba(245, 245, 245, 0.8);
+}
+
+table tr td {
+    position: relative;
+}
+
+#err {
+    color: rgba(255, 0, 0, 0.8);
+    position: absolute;
+    left: 93%;
+    top: 20%;
+    font-size: 20px;
+    width: 400px;
+    text-align: left;
+}
+
+.HomeMain div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.HomeMain .lowerIcons {
+    top: 30%;
+    height: auto;
+    padding: 2mm 0mm !important;
+    position: relative;
+}
+
+.HomeMain .lowerIcons span {
+    font-size: 120px;
+    position: absolute;
+    right: 100%;
+}
+
+.HomeMain div h1 {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 2mm 0mm !important;
+    font-size: 50px;
+    position: relative;
+    top: 15% !important;
+}
+
+.HomeMain div label {
+    display: block;
+    margin: auto;
+    width: 160px;
+    position: relative;
+    top: 25%;
+}
+
+.HomeMain div label a {
+    color: inherit;
+    text-decoration: none;
+    padding: 5mm !important;
+    position: relative;
+    margin: auto !important;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(180, 50, 110, 0.8);
+    border-radius: 20px;
+    transition: color, background-color 250ms;
+}
+
+.HomeMain div a:hover {
+    background-color: rgba(255, 100, 150, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.HomeMain div a:active {
+    transition: none;
+    color: inherit;
+    background-color: rgba(180, 50, 110, 0.8);
+}
+
+.RegMain {
+    display: block;
+}
+
+.RegMain form {
+    display: block;
+    width: 400px;
+    margin: auto !important;
+    position: relative;
+    top: 10%;
+}
+
+.RegMain form label {
+    color: rgba(250, 250, 250, 0.9);
+    font-size: 30px;
+    width: 160px;
+    display: block;
+    margin: auto !important;
+}
+
+.RegMain form table {
+    width: 100%;
+}
+
+.RegMain form table tr {
+    width: 80%;
+}
+
+.RegMain form table tr td {
+    width: 100%;
+}
+
+.RegMain form table tr td input {
+    width: 80%;
+    display: block;
+    margin: 2mm auto !important;
+    height: 24px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 1mm !important;
+    border: none;
+    border-radius: 2px;
+    transition: color, background-color 250ms;
+}
+
+input[type="number"]:-webkit-scrollbar {
+    display: none;
+}
+
+.RegMain form table tr td input:hover {
+    background-color: rgba(197, 247, 105, 0.3);
+    color: rgba(250, 250, 250, 0.9);
+}
+
+.RegMain form table tr td input:active {
+    background-color: initial;
+}
+
+.RegMain form table tr td input:focus {
+    outline: none;
+}
+
+.RegMain form button {
+    float: right;
+    margin-right: 10mm !important;
+    padding: 1mm 2mm !important;
+    font-size: 20px;
+    color: rgba(250, 250, 250, 0.6);
+    text-align: center;
+    background-color: rgba(180, 50, 110, 0.8);
+    border: none;
+    border-radius: 10px;
+    transition: color, background-color 250ms;
+}
+
+.RegMain form button:hover {
+    background-color: rgba(255, 100, 150, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.RegMain form button:active {
+    transition: none;
+    color: inherit;
+    background-color: rgba(180, 50, 110, 0.8);
+}
+
+.RegMain form button:focus {
+    outline: none;
+}
+
+.ValMain div {
+    width: 410px;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 2mm 0mm !important;
+    position: relative;
+    top: 100px;
+}
+
+.ValMain div a {
+    text-decoration: none;
+    position: relative;
+    left: 90%;
+    /*top: 110px; */
+    margin-right: 10mm !important;
+    padding: 1mm 2mm !important;
+    font-size: 20px;
+    color: rgba(250, 250, 250, 0.6);
+    text-align: center;
+    background-color: rgba(180, 50, 110, 0.8);
+    border: none;
+    border-radius: 10px;
+    transition: color, background-color 250ms;
+}
+
+.ValMain div a:hover {
+    background-color: rgba(255, 100, 150, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.ValMain div a:active {
+    transition: none;
+    color: inherit;
+    background-color: rgba(180, 50, 110, 0.8);
+}
+
+.ValMain div a:focus {
+    outline: none;
+}
+
+.ValMain div table {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 2mm !important;
+    position: relative;
+    /* outline: green solid; */
+}
+
+.ValMain div table tr {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: auto !important;
+    /* outline: red solid; */
+}
+
+.ValMain div table tr td {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    /* outline: black solid; */
+}
+
+.ValMain div table tr td label {
+    width: 100%;
+    font-size: 22px;
+}
+
+.PropertyMain {
+    padding-bottom: 20mm !important;
+    display: block;
+    position: relative;
+}
+
+.PropertyMain form {
+    display: block;
+    width: 400px;
+    margin: auto !important;
+    position: relative;
+    top: 10% !important;
+}
+
+.PropertyMain form>label {
+    color: rgba(250, 250, 250, 0.9);
+    font-size: 30px;
+    width: 280px;
+    display: block;
+    margin: auto !important;
+    padding: 5% 0% !important;
+}
+
+.PropertyMain form table,
+.PropertyMain form table tr,
+.PropertyMain form table tr td {
+    width: 100%;
+}
+
+.PropertyMain form table tr td {
+    font-size: 20px;
+}
+
+.PropertyMain form table tr td label {
+    position: relative;
+    left: 10%;
+    padding: 5mm 0mm !important;
+    font-size: 24px;
+    color: rgba(250, 250, 250, 0.9);
+}
+
+.PropertyMain form table tr td h3 {
+    position: relative;
+    left: 15%;
+    top: -11px;
+    font-weight: 400;
+}
+
+.PropertyMain form table tr td input[type="radio"] {
+    position: relative;
+    left: 10%;
+    top: 15px;
+}
+
+.PropertyMain form table tr td input[type="text"],
+.PropertyMain form table tr td input[type="number"] {
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: 2mm auto !important;
+    padding: 1mm 2mm !important;
+    height: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(173, 217, 230, 1);
+    color: rgba(250, 250, 250, 0.9);
+}
+
+.PropertyMain form table tr td select {
+    position: relative;
+    width: 83%;
+    display: block;
+    margin: 2mm auto !important;
+    height: 30px;
+    font-size: 22px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(173, 217, 230, 1);
+    color: rgba(250, 250, 250, 0.9);
+}
+
+.PropertyMain form table tr td select:focus {
+    outline: none;
+}
+
+.PropertyMain form table tr td select option {
+    color: rgba(250, 250, 250, 0.9);
+}
+
+.PropertyMain form button {
+    float: right;
+    margin-right: 10mm !important;
+    padding: 1mm 2mm !important;
+    font-size: 20px;
+    color: rgba(250, 250, 250, 0.6);
+    text-align: center;
+    background-color: rgba(180, 50, 110, 0.8);
+    border: none;
+    border-radius: 10px;
+    transition: color, background-color 250ms;
+}
+
+.PropertyMain form button:hover {
+    background-color: rgba(255, 100, 150, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.PropertyMain form button:active {
+    transition: none;
+    color: inherit;
+    background-color: rgba(180, 50, 110, 0.8);
+}
+
+.PropertyMain form button:focus {
+    outline: none;
+}
