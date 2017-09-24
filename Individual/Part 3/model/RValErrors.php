@@ -1,12 +1,12 @@
 <?php
-    class ValErrors{
-        public $fnameErr = null;
-        public $lnameErr = null;
-        public $telErr = null;
-        public $emailErr = null;
-        public $trnErr = null;
-        public $pwordErr = null;
-        public $rpwordErr = null;
+    class RValErrors{
+        public $fnameErr = false;
+        public $lnameErr = false;
+        public $telErr = false;
+        public $emailErr = false;
+        public $trnErr = false;
+        public $pwordErr = false;
+        public $rpwordErr = false;
 
         public function setValErrors($fnameErr,$lnameErr,$telErr,$emailErr,$trnErr,$pwordErr,$rpwordErr){
             $this->fnameErr = $fnameErr;

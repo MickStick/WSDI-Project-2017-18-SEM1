@@ -11,7 +11,7 @@
     ?>
 </head>
 <body>
-    <main class="RegMain">
+    <main class="RegMain" id="LocMain">
         <form action="locatevalid.php" method="post">
             <label>Location</label>
             <table>
@@ -21,7 +21,7 @@
                 <tr><td><input  name="parish" type="text" placeholder="Parish"></td></tr>
                 <tr><td><input  name="country" type="text" placeholder="Country"></td></tr>
             </table>
-            <button type="submit">Finished</button>
+            <button type="submit" id="locBtn">Finished</button>
         </form>
         
     </main>

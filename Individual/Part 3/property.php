@@ -14,7 +14,7 @@
     <main class="PropertyMain">
        
         <form action="/propertvalid.php" method="post">
-            <label>Property Description</label>
+            <label>Property Description 🏠</label>
             <table>
                 <!--<tr><td><label for="PropType">Property Type</label></td></tr>-->
                 <tr><td><select name="PropType">
@@ -38,22 +38,27 @@
                 </select></td></tr>
                 <!--<tr><td><label for="BedRooms">Number of Bedrooms</label></td></tr>-->
                 <tr><td><select name="BedRooms">
-                    <option value="1">**Number of Bedrooms**</option>
+                    <option value="title">**Number of Bedrooms**</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
-                    <option value="3">3+</option>
+                    <option value="3+">3+</option>
                 </select></td></tr>                
                 <!--<tr><td><label for="Bathrooms">Number of Bathrooms</label></td></tr>-->
                 <tr><td><select name="BathRooms">
                     <option value="title">**Number of Bathrooms**</option>
                     <option value="1">1</option>
-                    <option value="2">1 1/2</option>
-                    <option value="3">2</option>
-                    <option value="3">3+</option>
+                    <option value="1 1/2">1 1/2</option>
+                    <option value="2">2</option>
+                    <option value="3+">3+</option>
+                </select></td></tr>   
+                <tr><td><select name="ListingType">
+                    <option value="title">**Listing Type**</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Purchase">Purchase</option>
                 </select></td></tr>   
                 <tr><td><input  name="price" type="number" placeholder="($) Property Price"></td></tr>
             </table>
-            <button type="submit">Next</button>
+            <button type="submit" id="propBtn" >Next</button>
         </form>
         
     </main>
