@@ -12,7 +12,7 @@
 </head>
 <body>
     <main class="PropertyMain">
-       
+       <div class="BGblur"></div> <!-- Just The Background, nuh too pree it-->
         <form action="/propertvalid.php" method="post">
             <label>Property Description 🏠</label>
             <table>

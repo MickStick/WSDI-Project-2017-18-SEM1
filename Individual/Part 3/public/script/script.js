@@ -2,12 +2,12 @@ $(document).ready(function() {
     $('.HomeMain .lowerIcons span').eq(1).animate({ right: "35%" });
     $('.HomeMain .lowerIcons span').first().animate({ right: "55%" }, 350);
 
-    function addErr(parent, Err){
+    function addErr(parent, Err) {
         var valErr = $("<label id=\"err\"></label>");
         valErr.text(Err);
         parent.append(valErr);
     }
-    
+
     $('input[name=fname]').blur(function(e) {
         var xmlhttp = new XMLHttpRequest();
         var formData = new FormData();
@@ -17,15 +17,15 @@ $(document).ready(function() {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"Only letters and whitespaces");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "Only letters and whitespaces");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
@@ -45,15 +45,15 @@ $(document).ready(function() {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"Only letters and whitespaces");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "Only letters and whitespaces");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
@@ -73,15 +73,15 @@ $(document).ready(function() {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"must be 7 digist only");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "must be 7 digist only");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
@@ -101,15 +101,15 @@ $(document).ready(function() {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"Not a valid email address");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "Not a valid email address");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
@@ -129,15 +129,15 @@ $(document).ready(function() {
                 //console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"Invlid TRN"); 
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "Invlid TRN");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
@@ -157,15 +157,15 @@ $(document).ready(function() {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),">=8 characters, 1 uppercase, 1+ lowercase, special character, 1+ numbers, no spaces");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), ">=8 characters, 1 uppercase, 1+ lowercase, special character, 1+ numbers, no spaces");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
@@ -185,27 +185,27 @@ $(document).ready(function() {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"Is empty OR Should match with previous password");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "Is empty OR Should match with previous password");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
             }
         };
         formData.append('rpword', $(this).val());
-        formData.append('pword',$('input[name=pword]').val());
+        formData.append('pword', $('input[name=pword]').val());
         xmlhttp.open("POST", "controller/MainController.php?valtype=rpword");
         xmlhttp.send(formData);
     });
 
-    $('#regBtn').click(function(e){
+    $('#regBtn').click(function(e) {
         e.preventDefault();
         var pass = true;
         var here = $(this);
@@ -218,21 +218,21 @@ $(document).ready(function() {
         var trn = $('input[name=trn]');
         var pword = $('input[name=pword]');
         var rpword = $('input[name=rpword]');
-        var inputs = [fname,lname,tel1,email,trn,pword,rpword];
+        var inputs = [fname, lname, tel1, email, trn, pword, rpword];
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 //console.log(this.responseText);
                 var err = JSON.parse(this.responseText);
                 // console.log(err[0]);
-                for(var x = 0; x < err.length; x++){
-                    if(!err[x]){
+                for (var x = 0; x < err.length; x++) {
+                    if (!err[x]) {
                         inputs[x].css({ "outline": "rgba(255,0,0,0.8) solid" });
-                        pass = false;                        
-                    }else {
+                        pass = false;
+                    } else {
                         inputs[x].css({ "outline": "none" });
                     }
                 }
-                if(pass){
+                if (pass) {
                     here.parent().submit();
                 }
             }
@@ -253,217 +253,217 @@ $(document).ready(function() {
 
     /////////////////////////////////// Property Ajax Calls /////////////////////////////////Top
 
-    $('select[name=PropType]').change(function(e){
+    $('select[name=PropType]').change(function(e) {
         console.log($(this).val());
-        var xmlhttp = new XMLHttpRequest(); 
+        var xmlhttp = new XMLHttpRequest();
         var formData = new FormData();
-        formData.append('prop',$(this).val());
+        formData.append('prop', $(this).val());
         var here = $(this);
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"Invalid Type");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "Invalid Type");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
             }
         };
 
-        xmlhttp.open("POST","/controller/MainController.php?valtype=prop",true);
+        xmlhttp.open("POST", "/controller/MainController.php?valtype=prop", true);
         xmlhttp.send(formData);
     });
 
-    $('select[name=BuildType]').change(function(e){
+    $('select[name=BuildType]').change(function(e) {
         console.log($(this).val());
-        var xmlhttp = new XMLHttpRequest(); 
+        var xmlhttp = new XMLHttpRequest();
         var formData = new FormData();
-        formData.append('prop',$(this).val());
+        formData.append('prop', $(this).val());
         var here = $(this);
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"Invalid Type");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "Invalid Type");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
             }
         };
 
-        xmlhttp.open("POST","/controller/MainController.php?valtype=prop",true);
+        xmlhttp.open("POST", "/controller/MainController.php?valtype=prop", true);
         xmlhttp.send(formData);
     });
 
-    $('select[name=BedRooms]').change(function(e){
+    $('select[name=BedRooms]').change(function(e) {
         console.log($(this).val());
-        var xmlhttp = new XMLHttpRequest(); 
+        var xmlhttp = new XMLHttpRequest();
         var formData = new FormData();
-        formData.append('prop',$(this).val());
+        formData.append('prop', $(this).val());
         var here = $(this);
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"State the number of bedrooms");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "State the number of bedrooms");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
             }
         };
 
-        xmlhttp.open("POST","/controller/MainController.php?valtype=prop",true);
+        xmlhttp.open("POST", "/controller/MainController.php?valtype=prop", true);
         xmlhttp.send(formData);
     });
 
-    $('select[name=BathRooms]').change(function(e){
+    $('select[name=BathRooms]').change(function(e) {
         console.log($(this).val());
-        var xmlhttp = new XMLHttpRequest(); 
+        var xmlhttp = new XMLHttpRequest();
         var formData = new FormData();
-        formData.append('prop',$(this).val());
+        formData.append('prop', $(this).val());
         var here = $(this);
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"State the number of bathrooms");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "State the number of bathrooms");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
             }
         };
 
-        xmlhttp.open("POST","/controller/MainController.php?valtype=prop",true);
+        xmlhttp.open("POST", "/controller/MainController.php?valtype=prop", true);
         xmlhttp.send(formData);
     });
 
-    $('select[name=ListingType]').change(function(e){
+    $('select[name=ListingType]').change(function(e) {
         console.log($(this).val());
-        var xmlhttp = new XMLHttpRequest(); 
+        var xmlhttp = new XMLHttpRequest();
         var formData = new FormData();
-        formData.append('prop',$(this).val());
+        formData.append('prop', $(this).val());
         var here = $(this);
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"Invalid Type");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "Invalid Type");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
             }
         };
 
-        xmlhttp.open("POST","/controller/MainController.php?valtype=prop",true);
+        xmlhttp.open("POST", "/controller/MainController.php?valtype=prop", true);
         xmlhttp.send(formData);
     });
 
-    $('input[name=LandSize]').change(function(e){
+    $('input[name=LandSize]').change(function(e) {
         console.log($(this).val());
-        var xmlhttp = new XMLHttpRequest(); 
+        var xmlhttp = new XMLHttpRequest();
         var formData = new FormData();
-        formData.append('num',$(this).val());
+        formData.append('num', $(this).val());
         var here = $(this);
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"Should only be digits");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "Should only be digits");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
             }
         };
 
-        xmlhttp.open("POST","/controller/MainController.php?valtype=num",true);
+        xmlhttp.open("POST", "/controller/MainController.php?valtype=num", true);
         xmlhttp.send(formData);
     });
 
-    $('input[name=price]').change(function(e){
+    $('input[name=price]').change(function(e) {
         console.log($(this).val());
-        var xmlhttp = new XMLHttpRequest(); 
+        var xmlhttp = new XMLHttpRequest();
         var formData = new FormData();
-        formData.append('num',$(this).val());
+        formData.append('num', $(this).val());
         var here = $(this);
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"Should only be digits");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "Should only be digits");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
             }
         };
 
-        xmlhttp.open("POST","/controller/MainController.php?valtype=num",true);
+        xmlhttp.open("POST", "/controller/MainController.php?valtype=num", true);
         xmlhttp.send(formData);
     });
 
-    $('#propBtn').click(function(e){
+    $('#propBtn').click(function(e) {
         e.preventDefault();
         var pass = true;
         var here = $(this);
@@ -476,21 +476,21 @@ $(document).ready(function() {
         var bathrm = $('select[name=BathRooms]');
         var listtype = $('select[name=ListingType]');
         var price = $('input[name=price]');
-        var inputs = [proptype,land,buildtype,bedrm,bathrm,listtype,price];
+        var inputs = [proptype, land, buildtype, bedrm, bathrm, listtype, price];
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 console.log(this.responseText);
                 var err = JSON.parse(this.responseText);
                 // console.log(err[0]);
-                for(var x = 0; x < err.length; x++){
-                    if(!err[x]){
+                for (var x = 0; x < err.length; x++) {
+                    if (!err[x]) {
                         inputs[x].css({ "outline": "rgba(255,0,0,0.8) solid" });
-                        pass = false;                        
-                    }else {
+                        pass = false;
+                    } else {
                         inputs[x].css({ "outline": "none" });
                     }
                 }
-                if(pass){
+                if (pass) {
                     here.parent().submit();
                 }
             }
@@ -507,37 +507,37 @@ $(document).ready(function() {
         // console.log('clicked');
     });
 
-    $('#LocMain input').blur(function(e){
+    $('#LocMain input').blur(function(e) {
         console.log($(this).val());
-        var xmlhttp = new XMLHttpRequest(); 
+        var xmlhttp = new XMLHttpRequest();
         var formData = new FormData();
-        formData.append('addr',$(this).val());
+        formData.append('addr', $(this).val());
         var here = $(this);
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 // console.log(this.responseText);
                 if (!this.responseText) {
                     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
-                    if(here.parent().children().length == 1){
-                        addErr(here.parent(),"This is required");
-                    }                    
+                    if (here.parent().children().length == 1) {
+                        addErr(here.parent(), "This is required");
+                    }
                 } //else if (this.responseText == null) {
                 //     here.css({ "outline": "rgba(255,0,0,0.8) solid" });
                 // } 
                 else {
                     here.css({ "outline": "none" });
-                    if(here.parent().children().length > 1){
+                    if (here.parent().children().length > 1) {
                         here.parent().children('label').remove();
                     }
                 }
             }
         };
 
-        xmlhttp.open("POST","/controller/MainController.php?valtype=addr",true);
+        xmlhttp.open("POST", "/controller/MainController.php?valtype=addr", true);
         xmlhttp.send(formData);
     });
 
-    $('#locBtn').click(function(e){
+    $('#locBtn').click(function(e) {
         e.preventDefault();
         var pass = true;
         var here = $(this);
@@ -548,27 +548,27 @@ $(document).ready(function() {
         var city = $('input[name=city]');
         var parish = $('input[name=parish]');
         var country = $('input[name=country]');
-        var inputs = [addr1,addr2,city,parish,country];
+        var inputs = [addr1, addr2, city, parish, country];
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 console.log(this.responseText);
                 var err = JSON.parse(this.responseText);
                 // console.log(err[0]);
-                for(var x = 0; x < err.length; x++){
-                    if(!err[x]){
+                for (var x = 0; x < err.length; x++) {
+                    if (!err[x]) {
                         inputs[x].css({ "outline": "rgba(255,0,0,0.8) solid" });
-                        pass = false;                        
-                    }else {
+                        pass = false;
+                    } else {
                         inputs[x].css({ "outline": "none" });
                     }
                 }
-                if(pass){
+                if (pass) {
                     here.parent().submit();
                 }
             }
         };
         formData.append('addr1', addr1.val());
-        formData.append('addr2',addr2.val());
+        formData.append('addr2', addr2.val());
         formData.append('city', city.val());
         formData.append('parish', parish.val());
         formData.append('country', country.val());

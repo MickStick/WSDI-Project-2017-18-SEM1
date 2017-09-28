@@ -11,6 +11,7 @@
     ?>
 </head>
 <body>
+    <div class="BGblur"></div> <!-- Just The Background, nuh too pree it-->
     <main class="RegMain">
         <form action="/regisvalid.php" method="post">
             <label>Register 👤</label>
@@ -25,7 +26,7 @@
                 <tr><td><input  name="pword" type="password" placeholder="Password"></td></tr>
                 <tr><td><input  name="rpword" type="password" placeholder="Re-Type Password"></td></tr>
             </table>
-            <button type="submit">Register</button>
+            <button type="submit" id="regBtn">Register</button>
         </form>
         
     </main>

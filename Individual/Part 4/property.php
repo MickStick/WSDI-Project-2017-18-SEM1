@@ -1,5 +1,9 @@
 <?php
-    include "controller/MainController.php";       
+    include "controller/MainController.php";    
+    session_start();
+    if(!isset($_SESSION["fname"])){
+        header("location:register.php");
+    }  
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +16,7 @@
 </head>
 <body>
     <main class="PropertyMain">
-       
+       <div class="BGblur"></div> <!-- Just The Background, nuh too pree it-->
         <form action="/propertvalid.php" method="post">
             <label>Property Description 🏠</label>
             <table>

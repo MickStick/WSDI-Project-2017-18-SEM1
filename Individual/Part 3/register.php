@@ -11,6 +11,7 @@
     ?>
 </head>
 <body>
+    <div class="BGblur"></div> <!-- Just The Background, nuh too pree it-->
     <main class="RegMain">
         <form action="/regisvalid.php" method="post">
             <label>Register 👤</label>

@@ -3,6 +3,13 @@
     if($_SERVER["REQUEST_METHOD"] != "POST"){
         header("location: /property.php");
     }
+    session_start();
+    $_SESSION["PropType"] = $_POST["PropType"];
+    $_SESSION["LandSize"] = $_POST["LandSize"];
+    $_SESSION["BuildType"] = $_POST["BuildType"];
+    $_SESSION["BedRooms"] = $_POST["BedRooms"];
+    $_SESSION["BathRooms"] = $_POST["BathRooms"];
+    $_SESSION["price"] = $_POST["price"];
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +21,7 @@
     ?>
 </head>
 <body>
+    <div class="BGblur"></div> <!-- Just The Background, nuh too pree it-->
     <main class="ValMain">
         <div>
             <table>
