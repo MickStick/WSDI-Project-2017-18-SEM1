@@ -1,19 +1,9 @@
 <?php
+    #Author: Mikhail Shaw
     include "controller/MainController.php";
     if($_SERVER["REQUEST_METHOD"] != "POST"){
         header("location: /register.php");
     }
-
-    session_start();
-    $_SESSION["fname"] = $_POST["fname"];
-    $_SESSION["mname"] = $_POST["mname"];
-    $_SESSION["lname"] = $_POST["lname"];
-    $_SESSION["tel1"] = $_POST["tel1"];
-    $_SESSION["tel2"] = $_POST["tel2"];
-    $_SESSION["email"] = $_POST["email"];
-    $_SESSION["trn"] = $_POST["trn"];
-    $_SESSION["pword"] = $_POST["pword"];
-    $_SESSION["rpword"] = $_POST["rpword"];
 
 ?>
 

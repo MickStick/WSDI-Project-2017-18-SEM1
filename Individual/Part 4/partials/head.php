@@ -7,3 +7,4 @@
 <link rel="stylesheet" href="public/style/style.css" type="text/css">
 <script src="public/script/jquery.min.js"></script>
 <script src="public/script/script.js"></script>
+<link rel="shortcut icon" href="favicon.png">

@@ -1,4 +1,5 @@
 <?php
+    #Author: Mikhail Shaw
    include "controller/MainController.php";
 ?>
 

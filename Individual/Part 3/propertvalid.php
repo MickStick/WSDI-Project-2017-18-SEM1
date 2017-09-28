@@ -1,15 +1,10 @@
 <?php
+    #Author: Mikhail Shaw
     include "controller/MainController.php";
     if($_SERVER["REQUEST_METHOD"] != "POST"){
         header("location: /property.php");
     }
-    session_start();
-    $_SESSION["PropType"] = $_POST["PropType"];
-    $_SESSION["LandSize"] = $_POST["LandSize"];
-    $_SESSION["BuildType"] = $_POST["BuildType"];
-    $_SESSION["BedRooms"] = $_POST["BedRooms"];
-    $_SESSION["BathRooms"] = $_POST["BathRooms"];
-    $_SESSION["price"] = $_POST["price"];
+    
 ?>
 
 <!DOCTYPE html>

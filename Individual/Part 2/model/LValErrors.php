@@ -1,5 +1,4 @@
 <?php
-    #Author: Mikhail Shaw
     class LValErrors{
         public $Addr1Err = false;
         public $Addr2Err = false;

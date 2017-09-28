@@ -1,4 +1,5 @@
 <?php
+    #Author: Mikhail Shaw
     
     function valname($name){
         if(empty($name) || preg_match("/^[\s]*$/",$name) || preg_match("/^[-]*$/",$name) || !preg_match("/^[a-zA-Z- ]*$/",$name)){

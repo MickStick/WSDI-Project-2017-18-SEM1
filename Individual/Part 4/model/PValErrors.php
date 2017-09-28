@@ -1,4 +1,5 @@
 <?php
+    #Author: Mikhail Shaw
     class PValErrors{
         public $propTypeErr = false;
         public $landErr = false;

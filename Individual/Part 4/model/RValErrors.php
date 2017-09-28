@@ -1,4 +1,5 @@
 <?php
+    #Author: Mikhail Shaw
     class RValErrors{
         public $fnameErr = false;
         public $lnameErr = false;

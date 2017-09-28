@@ -1,4 +1,5 @@
 <?php
+    #Author: Mikhail Shaw
     include "controller/MainController.php";
     $icon = "
     <svg fill=\"rgba(240,240,240,0.7)\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">

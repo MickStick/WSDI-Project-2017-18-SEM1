@@ -1,4 +1,5 @@
 <?php
+    #Author: Mikhail Shaw
     session_start();
     if(!isset($_SESSION["city"])){
         header("location:location.php");
